@@ -1,0 +1,96 @@
+
+
+(q0,V) =   q0q1 //NEW STATE(final)
+(q0,n) = qy
+(q0,dwzyi) = qsa
+(q0, t) = qt
+(q0, s) = qs
+(q0, c) = qc
+(q0, bghkmpr) = qy
+(q0, h) = –
+(q0, y) = –
+
+(q1,V) = –
+(q1,n) = q0 
+(q1,dwzyi) = –
+(q1, t) = –
+(q1, s) = –
+(q1, c) = –
+(q1, bghkmpr) = –
+(q1, h) = –
+(q1, y) = –
+
+(qy,V) = q0q1 //repeat
+(qy,n) = –
+(qy,dwzyi) = – 
+(qy, t) = –
+(qy, s) = –
+(qy, c) = –
+(qy, bghkmpr) = -- 
+(qy, h) = –
+(qy, y) = qsa
+
+
+(qt,V) = q1q0 //repeat
+(qt,n) = —
+(qt,dwzyi) = – 
+(qt, t) = –
+(qt, s) = qsa
+(qt, c) = –
+(qt, bghkmpr) = – 
+(qt, h) =  –
+(qt, y) = –
+
+(qsa,V) = q0q1 //repeat
+(qsa,n) = –
+(qsa,dwzyi) = –
+(qsa, t) = –
+(qsa, s) = –
+(qsa, c) = –
+(qsa, bghkmpr) = – 
+(qsa, h) = –
+(qsa, y) –
+
+
+(qs,V) = q0q1 //repeat
+(qs,n) = —
+(qs,dwzyi) =  —
+(qs, t) = —
+(qs, s) = —
+(qs, c) = —
+(qs, bghkmpr) = — 
+(qs, h) = qsa
+(qs, y) = —
+
+(qc,V) = —
+(qc,n) = —
+(qc,dwzyi) = —
+(qc, t) = —
+(qc, s) = —
+(qc, c) = —
+(qc, bghkmpr) = — 
+(qc, h) = qsa
+(q0q1, y) = –
+
+(q0q1, V) = q0q1
+(q0q1, n) = q0qy //NEW STATE(final)
+(q0q1, dwzyi) = qsa
+(q0q1, t) = qt
+(q0q1, s) = qs
+(q0q1, c) = qc
+(q0q1, bghkmpr) = qy
+(q0q1, h) = –
+(q0q1, y) = –
+
+(q0qy, V) = q0q1 //repeat
+(q0qy, n) = –
+(q0qy, dwzyi) = qsa
+(q0qy, t) = qt
+
+
+(q0qy, s) = qs
+(q0qy, c) = qc
+(q0qy, bghkmnpr) = qy
+(q0qy, h) = – 
+(q0qy, y) = –
+—---------------------
