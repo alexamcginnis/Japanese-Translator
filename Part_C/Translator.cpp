@@ -412,9 +412,13 @@ void S()
    if(next_token() == "CONNECTOR") //optional case
    {
       match("CONNECTOR"); //terminal match
+      getEword();
+      gen();
    }
    noun(); //non-terminal call
+   getEword();
    match("SUBJECT"); //terminal match
+   gen();
    after_subject(); //non-terminal call
 }
 
@@ -426,11 +430,15 @@ void after_subject()
    //two different paths can be taken, <verb> or <noun>
    if(next_token() == "WORD2"){  //<verb> path
       verb(); 
+      getEword();
+      gen();
       tense(); 
+      gen();
       match("PERIOD"); 
    }
    else if(next_token() == "WORD1" || next_token() == "PRONOUN"){ //<noun> path
       noun(); 
+      getEword();
       after_noun(); 
    }
    else{
@@ -446,16 +454,22 @@ void after_noun()
    //three different paths can be taken, <be>, DESTINATION, or OBJECT
    if(next_token() == "IS" ||next_token() ==  "WAS"){ //<be> path
       be();
+      gen();
       match("PERIOD");
    }
    else if(next_token() == "DESTINATION"){ //Destination path
       match("DESTINATION");
+      gen();
       verb();
+      getEword();
+      gen();
       tense();
+      gen();
       match("PERIOD");
    }
    else if(next_token() == "OBJECT"){ //Object path
       match("OBJECT");
+      gen();
       after_object();
    }
    else{
